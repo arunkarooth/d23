@@ -373,8 +373,9 @@ li span {
 
 /*Navigation */
 
+
 nav {
-  
+    
   padding-top: 35px;
   text-align: center;
   
@@ -401,26 +402,25 @@ nav ul li:last-child {
 nav ul li a {
   display: inline-block;
   outline: none;
-  color: #fff;
+  color: #919191;
   font-family: Blender Pro;
   text-decoration: none;
   font-size: 19px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-weight: 100;
-  cursor: pointer;
 }
 
 nav ul li a:hover {
 
-  color: #FCEE09;
+  color: #ffffff;
   transition: 0.5s;
 }
 
-.nav-wrapper ul li:nth-child(1) a {
+.nav-wrapper ul li:nth-child(3) a {
 
-color: #FCEE09;
-font-weight: 200;
+  color: #FCEE09;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 864px) {
@@ -433,10 +433,9 @@ font-weight: 200;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: hsl(303, 99%, 46%);
+        background: #FCEE09;
         opacity: 0;
         transition: all 0.2s ease;
-        justify-content: space-between;
   }
 
   .nav-wrapper ul {
@@ -456,7 +455,6 @@ font-weight: 200;
 
   .nav-wrapper ul li:nth-child(1) a {
         transition-delay: 0.2s;
-        color: #020106;
   }
 
   .nav-wrapper ul li:nth-child(2) a {
@@ -464,7 +462,8 @@ font-weight: 200;
   }
 
   .nav-wrapper ul li:nth-child(3) a {
-        transition-delay: 0.4s;
+      color: #020106;
+      transition-delay: 0.4s;
   }
 
   .nav-wrapper ul li:nth-child(4) a {
@@ -504,7 +503,7 @@ font-weight: 200;
         display: block;
         width: 20px;
         height: 2px;
-        background: #fff;
+        background: #ffffff;
         border-radius: 2px;
         margin-left: 14px;
   }
@@ -669,7 +668,7 @@ font-weight: 200;
 
       position: relative;
       left: -202px !important;
-      top: -225px !important;
+      top: -280px !important;
   }
 
   .button_container {
