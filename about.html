@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <title>About DYUKSHA</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+
+<body style="background-color: #020106;">
+
+<!--Navigation-->
+
+<div class="container" id="home">
+    <nav>
+          <input type="checkbox" id="nav" class="hidden">
+          <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+          </label>
+          <div class="nav-wrapper">
+                <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="events.html">Events</a></li>
+                </ul>
+          </div>
+    </nav>
+</div>
+
+
+<!--Headers-->
+
+<div class="header_container">
+
+<div class="header">
+    <h1>About dyuksha'23</h1>
+</div>
+
+<div class="underline">
+    <img src="About Page/underline.png" draggable="false">
+</div>
+
+</div>
+
+
+<!--Social Media Icons-->
+<div class="social_container">
+
+    <div class="social_box">
+
+        <img src="About Page/socialbox_yellow.svg" draggable="false">
+    </div>
+
+    <div class="icons_container">
+
+
+    <div class="youtube">
+        <img src="About Page/youtube_black.svg" alt="Youtube" draggable="false" onclick="window.open('https://www.youtube.com/channel/UCwBEcY77KvSDHY8fWgY8gqg', '_blank');" />
+    </div>
+
+    <div class="instagram">
+        <img src="About Page/instagram_black.svg" alt="Instagram" draggable="false" onclick="window.open('https://www.instagram.com/pathum.danthanarayana/', '_blank');" />
+    </div>
+
+    </div>
+    </div>
+
+
+<!--Skills Cards-->
+<div class="intro">
+
+    <h2>Palakkad has increasingly fantastic things tucked away among its fold of the Western Ghats other than the Silent Valley National Park, and among those things is the NSS College of Engineering. It is best described as a place which is bordered by verdurous mountains, rather than walls, where youngsters from all over the state work and live together as a vibrant community. As opposed to portraying it as a scholarly organization, it is best depicted by the name its students gave - Shangri La, Heaven on Earth.</h2>
+     
+    <br><h2><b>Dyuksha'23</b> is a remarkable vision, propelled by an incredible reason and brought about by a strong spark which makes one's contemplations break bonds, to sustain a place where nothing and literally nothing is unimaginable. The national-level techno-administrative, social symposium is an amalgamation of science and artistry. It is innovation and technology acting together,catalyzed by inventiveness, to make the panacea. The intention of Dyuksha'23 is to compose a definitive outlay of innovation, business, culture and flair.</h2>
+</div>
+
+
+<div class="entire_container">
+
+
+
+
+<!--Footer-->
+
+
+<!--Progress Counter-->
+<div class="percent">
+    <div class="fill"></div>
+    <div class="counter"><h3></h3></div>
+</div>
+
+<script>
+
+    var counter = document.querySelector(".percent");
+
+    function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $("h3")
+            .text(Math.round(progress) + "%")
+            .css({ color: $textColor });
+
+        $(".fill")
+            .height(progress + "%")
+            .css({ backgroundColor: $bgColor });
+    }
+    progress();
+    $(document).on("scroll", progress);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <title>DYUKSHA'23   </title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body style="background-color: #020106;" id="top">
+
+    <!--Navigation-->
+
+    <div class="container" id="home">
+        <nav>
+              <input type="checkbox" id="nav" class="hidden">
+              <label for="nav" class="nav-btn">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+              </label>
+              <div class="nav-wrapper">
+                    <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="events.html">Events</a></li>
+                    </ul>
+              </div>
+        </nav>
+    </div>
+
+
+<!--Headers-->
+
+<div class="header_container">
+
+    <div class="header" id="projects">
+        <h1>EVENTS</h1>
+    </div>
+
+    <div class="underline">
+        <img src="About Page/underline.png" draggable="false">
+    </div>
+
+    </div>
+
+
+<!--Social Media Icons-->
+<!--Social Media Icons-->
+<div class="social_container">
+    <div class="social_box">
+        <img src="Events Page/social box.svg" draggable="false">
+    </div>
+    
+    <div class="icons_container">
+    <div class="github">
+        <img src="About Page/github_black.svg" alt="mail" draggable="false" onclick="window.open('https://github.com/pathumd', '_blank');" />
+    </div>
+    
+    <div class="youtube">
+        <img src="About Page/youtube_black.svg" alt="Youtube" draggable="false" onclick="window.open('https://www.youtube.com/channel/UCwBEcY77KvSDHY8fWgY8gqg', '_blank');" />
+    </div>
+    
+    <div class="instagram">
+        <img src="About Page/instagram_black.svg" alt="Instagram" draggable="false" onclick="window.open('https://www.instagram.com/pathum.danthanarayana/', '_blank');" />
+    </div>
+    
+    
+    
+    </div>
+    </div>
+
+
+
+<!--Projects-->
+<div class="project1">
+    <img class="responsive" src="Events Page/Frame1.png" draggable="false" >
+</a>
+
+</div>
+
+<div class="project2">
+    <a href="list.html">
+    <img class="responsive" src="Events Page/Frame2.png" draggable="false">
+</a>
+</div>
+
+<div class="project3"><a href="list.html">
+    <img class="responsive" src="Events Page/Frame3.png" draggable="false">
+</a>
+</div>
+
+<div class="project4">
+    <img class="responsive" src="Events Page/Frame4.png" draggable="false">
+</div>
+
+<div class="project5">
+    <img class="responsive" src="Events Page/Frame5.png" draggable="false">
+</div>
+
+
+
+<!--Progress Counter-->
+<div class="percent">
+    <div class="fill"></div>
+    <div class="counter"><h3></h3></div>
+</div>
+
+<script>
+
+    var counter = document.querySelector(".percent");
+
+    function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $("h3")
+            .text(Math.round(progress) + "%")
+            .css({ color: $textColor });
+
+        $(".fill")
+            .height(progress + "%")
+            .css({ backgroundColor: $bgColor });
+    }
+    progress();
+    $(document).on("scroll", progress);
+</script>
+
+
+</body>
+
+</html>
