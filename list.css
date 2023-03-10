@@ -617,6 +617,7 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        max-width: 70%;
     
     }
     
