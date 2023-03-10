@@ -435,21 +435,6 @@ nav ul li a:hover {
 
 
 
-
-/*Footer */
-
-.footer h2 {
-    position: absolute;
-    text-align: center;
-    color: #919191;
-    font-weight: 100;
-    font-size: 15px;
-    top: 1850px;
-    padding-bottom: 50px;
-    top: 1350px;
-}
-
-
 /*Optimization*/
 
 @media only screen and (max-width: 480px) {
@@ -492,11 +477,6 @@ nav ul li a:hover {
         top: 335px;
     }
 
-    
-    .footer {
-        position: relative;
-        top: -1000px !important;
-    }
 
 }
 
@@ -532,7 +512,7 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 320px;
-        min-width: 60%;
+        max-width: 60%;
     
     }
     
