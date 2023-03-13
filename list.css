@@ -404,10 +404,6 @@ nav ul li a:hover {
     padding-bottom: 50px;
 }
 
-.list{
-    column-count: 3;
-    column-gap: 1rem;
-}
 
 .poster img {
     position: relative;
@@ -418,7 +414,8 @@ nav ul li a:hover {
     transition: .3s;
     cursor: pointer;
     max-width: 60%;
-    break-inside: avoid;
+    top: 350px;
+
 
 
 }

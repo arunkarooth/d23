@@ -707,12 +707,6 @@ nav ul li a:hover {
       left: -38px !important;
   }
 
-  .footer {
-
-      position: relative;
-      top: -160px;
-
-  }
 
 
 
@@ -766,9 +760,16 @@ nav ul li a:hover {
       left: -30px;
   }
 
-  .footer h2 {
+  body {
 
-    top: 850px;
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url("Home Page/cp2077_3_mob.png");
+        background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 30;
   }
 
 
