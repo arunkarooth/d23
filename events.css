@@ -636,37 +636,38 @@ nav ul li a:hover {
 
 /*Optimization*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480x) {
 
     
     .social_container {
     
         transform: scale(0.6) !important;
-        top: -200px !important;
-        left: -25px;
+        top: -210px !important;
+        left: -10px;
     }
     .header {
         position: absolute;
         top: 0px !important;
-        left: -160px !important;
+        left: -260px !important;
     }
     .header h1 {
 
-        font-size: 30px !important;
+        font-size: 25px !important;
     }
 
     .underline img {
 
         position: absolute !important;
         top: 245px !important;
-        left: 105px !important;
+        left: 1px !important;
         transform: scale(0.7) !important;
     }
     
     .project1 img {
     
         transform: scale(0.8);
-        min-width: 80%;
+        max-width: 70%;
+        opacity: 1;
     }
     
     .project2 img {
@@ -679,12 +680,16 @@ nav ul li a:hover {
     .project2 img:hover {
     
         top: 335px;
+        
     }
     
     .project3 img {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+        
+
     }
     
     
@@ -697,6 +702,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+
     }
     
     .project4 img:hover {
@@ -708,6 +715,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+
     }
     
     .project5 img:hover {
@@ -719,6 +728,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+
     }
     
     .project6 img:hover {
@@ -730,6 +741,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+
     }
     
     .project7 img:hover {
@@ -741,6 +754,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+
     }
     
     .project8 img:hover {
@@ -752,6 +767,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        opacity: 1;
+
     }
     
     .project9 img:hover {
@@ -798,6 +815,7 @@ nav ul li a:hover {
     .project1 img {
     
         transform: scale(0.8);
+        
     }
     
     .project2 img {
