@@ -72,27 +72,27 @@ nav {
     padding-top: 35px;
     text-align: center;
     
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: block;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     position: relative;
     display: inline-block;
     top: 10px;
-}
-
-nav ul li:not(:first-child) {
+  }
+  
+  nav ul li:not(:first-child) {
     margin-left: 48px;
-}
-
-nav ul li:last-child {
+  }
+  
+  nav ul li:last-child {
     margin-right: 24px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     display: inline-block;
     outline: none;
     color: #919191;
@@ -102,23 +102,23 @@ nav ul li a {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     font-weight: 100;
-}
-
-nav ul li a:hover {
-
+  }
+  
+  nav ul li a:hover {
+  
     color: #ffffff;
     transition: 0.5s;
-}
-
-.nav-wrapper ul li:nth-child(3) a {
-
+  }
+  
+  .nav-wrapper ul li:nth-child(3) a {
+  
     color: #FCEE09;
     font-weight: 200;
   }
-
-@media screen and (max-width: 864px) {
-
-
+  
+  @media screen and (max-width: 864px) {
+  
+  
     .nav-wrapper {
           position: fixed;
           top: 0;
@@ -130,14 +130,14 @@ nav ul li a:hover {
           opacity: 0;
           transition: all 0.2s ease;
     }
-
+  
     .nav-wrapper ul {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
           width: 100%;
     }
-
+  
     .nav-wrapper ul li {
           display: block;
           float: none;
@@ -145,28 +145,28 @@ nav ul li a:hover {
           text-align: right;
           margin-bottom: 10px;
     }
-
+  
     .nav-wrapper ul li:nth-child(1) a {
           transition-delay: 0.2s;
     }
-
+  
     .nav-wrapper ul li:nth-child(2) a {
           transition-delay: 0.3s;
     }
-
+  
     .nav-wrapper ul li:nth-child(3) a {
         color: #020106;
         transition-delay: 0.4s;
     }
-
+  
     .nav-wrapper ul li:nth-child(4) a {
           transition-delay: 0.5s;
     }
-
+  
     .nav-wrapper ul li:not(:first-child) {
           margin-left: 0;
     }
-
+  
     .nav-wrapper ul li a {
           padding: 20px 24px;
           opacity: 0;
@@ -179,7 +179,7 @@ nav ul li a:hover {
           transform: translateX(-20px);
           transition: all 0.2s ease;
     }
-
+  
     .nav-btn {
           position: fixed;
           right: 10px;
@@ -191,7 +191,7 @@ nav ul li a:hover {
           z-index: 9999;
           border-radius: 50%;
     }
-
+  
     .nav-btn i {
           display: block;
           width: 20px;
@@ -200,56 +200,56 @@ nav ul li a:hover {
           border-radius: 2px;
           margin-left: 14px;
     }
-
+  
     .nav-btn i:nth-child(1) {
           margin-top: 16px;
     }
-
+  
     .nav-btn i:nth-child(2) {
           margin-top: 4px;
           opacity: 1;
     }
-
+  
     .nav-btn i:nth-child(3) {
           margin-top: 4px;
     }
-}
-
-#nav:checked + .nav-btn {
+  }
+  
+  #nav:checked + .nav-btn {
     transform: rotate(45deg);
-}
-
-#nav:checked + .nav-btn i {
+  }
+  
+  #nav:checked + .nav-btn i {
     background: #000;
     transition: transform 0.2s ease;
-}
-
-#nav:checked + .nav-btn i:nth-child(1) {
+  }
+  
+  #nav:checked + .nav-btn i:nth-child(1) {
     transform: translateY(6px) rotate(180deg);
-}
-
-#nav:checked + .nav-btn i:nth-child(2) {
+  }
+  
+  #nav:checked + .nav-btn i:nth-child(2) {
     opacity: 0;
-}
-
-#nav:checked + .nav-btn i:nth-child(3) {
+  }
+  
+  #nav:checked + .nav-btn i:nth-child(3) {
     transform: translateY(-6px) rotate(90deg);
-}
-
-#nav:checked ~ .nav-wrapper {
+  }
+  
+  #nav:checked ~ .nav-wrapper {
     z-index: 9990;
     opacity: 1;
-}
-
-#nav:checked ~ .nav-wrapper ul li a {
+  }
+  
+  #nav:checked ~ .nav-wrapper ul li a {
     opacity: 1;
     transform: translateX(0);
-}
-
-.hidden {
+  }
+  
+  .hidden {
     display: none;
-}
-
+  }
+  
 
   /* Progress Counter */
 
@@ -788,17 +788,11 @@ nav ul li a:hover {
 
 @media only screen and (min-width: 360px) and (max-width: 765px) {
 
-    
-    .social_container {
-    
-        transform: scale(0.7);
-        top: -260px;
-        left: -25px;
-    }
+   
     .header {
-        position: absolute;
-        top: 18px;
-        left: -110px;
+        position: relative;
+        top: -128px;
+        left: -210px;
     }
     .header h1 {
 
@@ -808,13 +802,23 @@ nav ul li a:hover {
     .underline img {
 
         position: absolute;
-        top: 280px;
-        left: 172px;
+        top: 160px;
+        left: 102px;
     }
+     
+    .social_container {
     
+        visibility: hidden;
+            }
+    .percent{
+        visibility: hidden;
+    }
     .project1 img {
     
         transform: scale(0.8);
+        margin-top: -120px;
+        min-width: 100%;
+        opacity: 1;
         
     }
     
@@ -822,6 +826,9 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+        opacity: 1;
+
     
     }
     
@@ -834,6 +841,9 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+        opacity: 1;
+
     }
     
     
@@ -846,6 +856,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+
     }
     
     .project4 img:hover {
@@ -857,6 +869,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+
     }
     
     .project5 img:hover {
@@ -868,6 +882,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+
     }
     
     .project6 img:hover {
@@ -879,6 +895,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+
     }
     
     .project7 img:hover {
@@ -890,6 +908,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+
     }
     
     .project8 img:hover {
@@ -902,6 +922,8 @@ nav ul li a:hover {
     
         transform: scale(0.8);
         top: 340px;
+        min-width: 100%;
+
     }
     
     .project9 img:hover {

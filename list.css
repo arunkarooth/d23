@@ -418,7 +418,9 @@ nav ul li a:hover {
 
 
 
-}
+}   
+
+
 
 
 .poster img:hover {
@@ -439,9 +441,10 @@ nav ul li a:hover {
     
     .social_container {
     
-        transform: scale(0.6) !important;
-        top: -200px !important;
-        left: -25px;
+        visibility: hidden;
+            }
+    .percent{
+        visibility: hidden;
     }
     .header {
         position: absolute;
@@ -466,6 +469,7 @@ nav ul li a:hover {
         transform: scale(0.8);
         top: 320px;
         max-width: 60%;
+        opacity: 1;
     
     }
     

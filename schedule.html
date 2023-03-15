@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <title>DYUKSHA'23   </title>
+    <link rel="stylesheet" href="schedule.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body style="background-color: #020106;" id="top">
+
+    <!--Navigation-->
+
+    <div class="container" id="home">
+        <nav>
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+            </label>
+            <div class="nav-wrapper">
+                  <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <!-- <li><a href="schedule.html">Schedule</a></li> -->
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="workshops.html">WORKSHOPS</a></li>
+                        <li><a href="proshows.html">Proshows</a></li>
+                        <!-- <li><a href="informals.html">Informals</a></li> -->
+                        <!-- <li><a href="faq.html">FAQ</a></li> -->
+                  </ul>
+            </div>
+      </nav>
+    </div>
+
+
+<!--Headers-->
+
+<div class="header_container">
+
+    <div class="header" id="projects">
+        <h1>Schedule</h1>
+    </div>
+
+    <div class="underline">
+        <img src="About Page/underline.png" draggable="false">
+    </div>
+
+    </div>
+
+
+<!--Social Media Icons-->
+<!--Social Media Icons-->
+<div class="social_container">
+    <div class="social_box">
+        <img src="Events Page/social box.svg" draggable="false">
+    </div>
+    <div class="youtube">
+        <img src="About Page/youtube_black.svg" alt="Youtube" draggable="false" onclick="window.open('', '_blank');" />
+    </div>
+    
+    <div class="instagram">
+        <img src="About Page/instagram_black.svg" alt="Instagram" draggable="false" onclick="window.open('', '_blank');" />
+    </div>
+    
+    
+    
+    </div>
+    </div>
+
+
+    <div class="timeline">
+        <!-- Left vertical line -->
+        <div class="timeline__line"></div>
+    
+        <!-- The timeline items timeline -->
+        <div class="timeline__items">
+            <!-- Each timeline item -->
+            <div class="timeline__item">
+                <!-- The circle and title -->
+                <div class="timeline__top">
+                    <!-- The circle -->
+                    <div class="timeline__circle"></div>
+    
+                    <!-- The title -->
+                    <div class="timeline__title">Event1</div>
+                </div>
+    
+                <!-- The description -->
+                <div class="timeline__desc">DEPT</div>
+            </div>
+    
+            <!-- Repeat other items -->
+<div class="timeline__items">
+            <!-- Each timeline item -->
+            <div class="timeline__item">
+                <!-- The circle and title -->
+                <div class="timeline__top">
+                    <!-- The circle -->
+                    <div class="timeline__circle"></div>
+    
+                    <!-- The title -->
+                    <div class="timeline__title">Event1</div>
+                </div>
+    
+                <!-- The description -->
+                <div class="timeline__desc">DEPT</div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--Progress Counter-->
+<div class="percent">
+    <div class="fill"></div>
+    <div class="counter"><h3></h3></div>
+</div>
+
+<script>
+
+    var counter = document.querySelector(".percent");
+
+    function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $("h3")
+            .text(Math.round(progress) + "%")
+            .css({ color: $textColor });
+
+        $(".fill")
+            .height(progress + "%")
+            .css({ backgroundColor: $bgColor });
+    }
+    progress();
+    $(document).on("scroll", progress);
+</script>
+
+
+</body>
+
+</html>
